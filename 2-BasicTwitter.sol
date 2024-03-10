@@ -9,14 +9,18 @@ pragma solidity 0.8.24;
 
 contract Twitter {
 
-    mapping(address => string ) public tweets;
+    mapping(address => string[] ) public tweets;
 
     function createTweet(string memory _tweet) public {
-        tweets[msg.sender] = _tweet;
+        tweets[msg.sender].push(_tweet);
     }
 
-    function getTweet(address  _addrs) public view returns (string memory){
+    function getTweet(address  _addrs) public view returns (string[] memory){
         return tweets[_addrs];
+    }
+
+    function getoneTweet(address _addrs ,uint _i) public view returns (string memory){
+        return tweets[_addrs][_i];
     }
 
 }
