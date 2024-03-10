@@ -19,13 +19,7 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_owner",
-						"type": "address"
-					}
-				],
+				"inputs": [],
 				"name": "getAllTweets",
 				"outputs": [
 					{
@@ -168,11 +162,11 @@
 	},
 	"sources": {
 		"3-Twitter-Struct.sol": {
-			"keccak256": "0xcfc122dc9dc7d44db2375f9ff3004a2e27df4becd5595da0e45539b6466c5397",
+			"keccak256": "0x77739270d4d4be25b7027e124d4c5c98956fa4ddc85aab857da655cd69605bfb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://40ed3efe2fec9d8855a2fb69ab806f433853e4f08e166bb72dcc363e200f8836",
-				"dweb:/ipfs/QmRLC9yEJFmj31bKxuBPcmAnkf1owodQ91CMFd3Dk8iBZv"
+				"bzz-raw://2540e5248f5442a8ed093852cd497010e889b42901beda1a10b62fd67ddb33ae",
+				"dweb:/ipfs/QmdjmvguNQovbGDq8MBpU3Q2c1w74AkfiixJwep6JRaDbg"
 			]
 		}
 	},
