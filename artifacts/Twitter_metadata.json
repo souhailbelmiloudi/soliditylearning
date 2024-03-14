@@ -6,6 +6,37 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "MAX_TWEET_LENGTH",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "newTweetLength",
+						"type": "uint16"
+					}
+				],
+				"name": "changeTweetLength",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -19,7 +50,13 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
 				"name": "getAllTweets",
 				"outputs": [
 					{
@@ -95,6 +132,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -147,7 +197,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"3-Twitter-Struct.sol": "Twitter"
+			"6-Twitter-Modifier-Exercise.sol": "Twitter"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -161,12 +211,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"3-Twitter-Struct.sol": {
-			"keccak256": "0x77739270d4d4be25b7027e124d4c5c98956fa4ddc85aab857da655cd69605bfb",
+		"6-Twitter-Modifier-Exercise.sol": {
+			"keccak256": "0x86abadbd935a6be077a98d634b635af00b887120a6cba390d964d79f88613981",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2540e5248f5442a8ed093852cd497010e889b42901beda1a10b62fd67ddb33ae",
-				"dweb:/ipfs/QmdjmvguNQovbGDq8MBpU3Q2c1w74AkfiixJwep6JRaDbg"
+				"bzz-raw://efbe50db2f0a9d4b5b144af9e09fa81a61fa54c901412413affbc91b09011a62",
+				"dweb:/ipfs/QmUn3jtwYf8gLk9hq9tqDzSbJsjwPcR9GvZjKW9SJFQJhv"
 			]
 		}
 	},
