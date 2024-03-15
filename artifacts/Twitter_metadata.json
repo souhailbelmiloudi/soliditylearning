@@ -11,6 +11,99 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "TweetCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "liker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "tweetAuthor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tweetId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newLikeCount",
+						"type": "uint256"
+					}
+				],
+				"name": "TweetLiked",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "liker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "tweetAuthor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tweetId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newLikeCount",
+						"type": "uint256"
+					}
+				],
+				"name": "TweetUnLiked",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "MAX_TWEET_LENGTH",
 				"outputs": [
@@ -144,14 +237,14 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_id",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
 					},
 					{
-						"internalType": "address",
-						"name": "_author",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
 					}
 				],
 				"name": "likeTweet",
@@ -219,14 +312,14 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_id",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
 					},
 					{
-						"internalType": "address",
-						"name": "_author",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
 					}
 				],
 				"name": "unlikeTweet",
@@ -248,7 +341,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"7-Twitter-AddLike-Exercise.sol": "Twitter"
+			"9-Twitter-AddEvent-Exercise.sol": "Twitter"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -262,12 +355,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"7-Twitter-AddLike-Exercise.sol": {
-			"keccak256": "0x0a90e9316fcd31955ff5137dd0bede14ab21685e382303706bbf7f0c9e4c9d11",
+		"9-Twitter-AddEvent-Exercise.sol": {
+			"keccak256": "0xd0898772cf71c91f6216f81c65bc2eb5c14a88eeeb732658c440e2a101de9b59",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d9e81a2a8e0fc00517321442275b37b43972aed886f7c465d1a6f81691cf4977",
-				"dweb:/ipfs/QmXvQ5kHBq9xdCZJTToTaRN5UAi2brVd7dP4EXUHtpgS2J"
+				"bzz-raw://0ba0e4ae7e903daf18c066d4e4a6979ff547b96678c8d53e10f3db8545f9ee2d",
+				"dweb:/ipfs/QmWZbbTKh9XMX4a2aZZcWJYt9VMJtuyNhtBTDRTzunnQSV"
 			]
 		}
 	},
